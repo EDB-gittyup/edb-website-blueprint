@@ -5,10 +5,10 @@
 }
 
 :root {
-  --bg: #f5f4f0;
-  --ink: #1a1a18;
-  --muted: #8a8a82;
-  --accent: #1a1a18;
+  --bg: #b85c38;
+  --ink: #faf4ec;
+  --muted: #e8a882;
+  --accent: #faf4ec;
   --gap: clamp(1.5rem, 4vw, 3rem);
 }
 
@@ -35,7 +35,6 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 1.4rem var(--gap);
-  mix-blend-mode: multiply;
 }
 
 .nav-name {
@@ -129,7 +128,7 @@ section {
 .img-placeholder {
   width: 100%;
   aspect-ratio: 4 / 3;
-  background: #ddddd6;
+  background: #9e4a28;
   transition: opacity 0.3s;
 }
 
@@ -226,7 +225,7 @@ section {
 /* FOOTER */
 footer {
   padding: 2rem var(--gap);
-  border-top: 1px solid #ddddd6;
+  border-top: 1px solid #9e4a28;
   font-size: 0.75rem;
   color: var(--muted);
 }
