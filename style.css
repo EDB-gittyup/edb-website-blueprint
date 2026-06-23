@@ -5,10 +5,10 @@
 }
 
 :root {
-  --bg: #b85c38;
-  --ink: #faf4ec;
-  --muted: #e8a882;
-  --accent: #faf4ec;
+  --bg: #ffffff;
+  --ink: #4a2c1a;
+  --muted: #9a7060;
+  --accent: #4a2c1a;
   --gap: clamp(1.5rem, 4vw, 3rem);
 }
 
@@ -38,9 +38,9 @@ nav {
 }
 
 .nav-name {
-  font-size: 0.85rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: var(--ink);
 }
 
 nav ul {
@@ -71,21 +71,26 @@ nav a:hover {
   justify-content: center;
   padding: 0 var(--gap);
   position: relative;
+  overflow: hidden;
 }
 
-.hero-content h1 {
-  font-size: clamp(3rem, 10vw, 9rem);
-  font-weight: 400;
-  line-height: 1;
-  letter-spacing: -0.02em;
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background: url('hero.jpg') center center / cover no-repeat;
 }
 
-.hero-sub {
-  margin-top: 1.2rem;
-  font-size: clamp(0.9rem, 1.5vw, 1.1rem);
-  color: var(--muted);
-  font-style: italic;
+.hero-bg::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  background: linear-gradient(to bottom, transparent, #ffffff);
 }
+
+
 
 .scroll-hint {
   position: absolute;
@@ -128,7 +133,7 @@ section {
 .img-placeholder {
   width: 100%;
   aspect-ratio: 4 / 3;
-  background: #9e4a28;
+  background: #e8e0da;
   transition: opacity 0.3s;
 }
 
@@ -225,7 +230,7 @@ section {
 /* FOOTER */
 footer {
   padding: 2rem var(--gap);
-  border-top: 1px solid #9e4a28;
+  border-top: 1px solid #e8e0da;
   font-size: 0.75rem;
   color: var(--muted);
 }

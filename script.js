@@ -1,4 +1,4 @@
-// Fade nav in/out on scroll
+// Nav hide on scroll down, show on scroll up
 const nav = document.querySelector('nav');
 let lastY = 0;
 
